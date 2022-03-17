@@ -1,0 +1,48 @@
+php artisan make:model Home -a
+php artisan make:model Dashboard -a
+php artisan make:component AppLayout
+php artisan make:model Produk -a
+php artisan make:model cart -a
+
+
+
+
+
+
+
+
+
+
+
+<!-- script factory -->
+php artisan tinker
+App\Models\Produk::factory()->count(20)->create();
+exit
+
+// App\Models\Produk::factory()->create();
+
+
+<!-- customer -->
+php artisan tinker
+App\Models\Customer::factory()->count(20)->create();
+exit
+
+
+
+// $produks = new App\Models\Produk;
+// $produk->factory()->create();
+
+
+<!-- extension -->
+php namecpace resolver
+
+
+
+<!-- action  -->
+
+php artisan tinker
+App\Models\Produk::factory()->count(10)->create();
+exit
+php artisan tinker
+App\Models\Customer::factory()->count(10)->create();
+exit

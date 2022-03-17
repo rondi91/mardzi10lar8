@@ -1,5 +1,9 @@
 <?php
 
+
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
+use App\Models\Dasboard;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/dd', function () {
     return view('welcome');
 });
+Route::get('/', [DashboardController::class, 'index'])->name('Dashboard.index');
