@@ -1,8 +1,11 @@
 php artisan make:model Home -a
 php artisan make:model Dashboard -a
 php artisan make:component AppLayout
-php artisan make:model Produk -a
+php artisan make:component Navbar
+php artisan make:model Product -a
 php artisan make:model cart -a
+php artisan make:model category -a
+php artisan make:model order -a
 
 
 
@@ -46,3 +49,13 @@ exit
 php artisan tinker
 App\Models\Customer::factory()->count(10)->create();
 exit
+
+
+
+
+
+git
+============================
+git remote add origin https://github.com/rondi91/mardzi10lar8.git
+git branch -M main
+git push -u origin main
